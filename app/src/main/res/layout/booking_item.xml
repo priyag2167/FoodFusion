@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/roomcard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@drawable/round_corner"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_1sdp"
+        android:layout_marginStart="@dimen/_1sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/roomimage"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_margin="@dimen/_5sdp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room"
+            android:layout_marginStart="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:textColor="@color/darkblue"
+            />
+
+        <TextView
+            android:id="@+id/roomno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room no"
+            android:layout_marginStart="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:textColor="@color/darkblue"
+            />
+        <TextView
+            android:id="@+id/bookingid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking Id"
+            android:layout_marginStart="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="#5D6065"
+            />
+        <TextView
+            android:id="@+id/checkindate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+            tools:text="Date"/>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

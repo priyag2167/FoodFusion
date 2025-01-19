@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <item
+        android:id="@+id/nav_home_user"
+        android:title="Home"
+        android:icon="@drawable/foodhome"
+        />
+
+    <item
+        android:id="@+id/nav_allorder"
+        android:title="All Order"
+        android:icon="@drawable/orderfood"
+        />
+
+    <item
+        android:id="@+id/nav_AddtoCart"
+        android:title=" Cart"
+        android:icon="@drawable/cart"
+        />
+    <item
+        android:id="@+id/nav_logout"
+        android:title=" Logout"
+        android:icon="@drawable/logout"
+        />
+
+</menu>
